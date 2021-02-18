@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+span {
+    margin: 10px 10px 0 0;
+    padding-bottom: 0.714em !important;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body,
+.inner {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: url("./portfolio-background-header.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.noselect {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.outline {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    background-color: transparent;
+    width: 500px;
+    height: 300px;
+    perspective: 5000px;
+}
+
+.card:hover .inner {
+    transform: rotateY(180deg) translateZ(5px);
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+}
+
+.inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-align: center;
+}
+
+.inner:after {
+    content: "";
+    background: inherit;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    filter: blur(8px);
+}
+
+.front,
+.back {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    padding: 20px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: rotateY(0deg) translateZ(0px);
+}
+
+.front {
+    text-align: center;
+    background-color: rgba(129, 181, 212, 0.8);
+    color: black;
+}
+
+.front h1 {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.back {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    transform: rotateY(-180deg);
+}
+
+.back h1 {
+    padding-bottom: 0 !important;
+    padding-top: 0.714em !important;
+}
+
+.back p {
+    padding-top: 0 !important;
+}
+
+.back img {
+    top: 10px;
+    position: relative;
+    width: 130px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+@media screen and (max-width: 900px) {
+    .inner {
+        background-size: 200% 200%;
+    }
+}
