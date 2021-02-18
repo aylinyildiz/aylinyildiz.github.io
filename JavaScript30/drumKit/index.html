@@ -11,39 +11,39 @@
 
 
     <div class="keys">
-        <div data-key="65" class="key">
+        <div data-key="65" class="key" onmousedown="clap.play();">
             <kbd>A</kbd>
             <span class="sound">clap</span>
         </div>
-        <div data-key="83" class="key">
+        <div data-key="83" class="key" onmousedown="hihat.play();">
             <kbd>S</kbd>
             <span class="sound">hihat</span>
         </div>
-        <div data-key="68" class="key">
+        <div data-key="68" class="key" onmousedown="kick.play();">
             <kbd>D</kbd>
             <span class="sound">kick</span>
         </div>
-        <div data-key="70" class="key">
+        <div data-key="70" class="key" onmousedown="openhat.play();">
             <kbd>F</kbd>
             <span class="sound">openhat</span>
         </div>
-        <div data-key="71" class="key">
+        <div data-key="71" class="key" onmousedown="boom.play();">
             <kbd>G</kbd>
             <span class="sound">boom</span>
         </div>
-        <div data-key="72" class="key">
+        <div data-key="72" class="key" onmousedown="ride.play();">
             <kbd>H</kbd>
             <span class="sound">ride</span>
         </div>
-        <div data-key="74" class="key">
+        <div data-key="74" class="key" onmousedown="snare.play();">
             <kbd>J</kbd>
             <span class="sound">snare</span>
         </div>
-        <div data-key="75" class="key">
+        <div data-key="75" class="key" onmousedown="tom.play();">
             <kbd>K</kbd>
             <span class="sound">tom</span>
         </div>
-        <div data-key="76" class="key">
+        <div data-key="76" class="key" onmousedown="tink.play();">
             <kbd>L</kbd>
             <span class="sound">tink</span>
         </div>
@@ -60,6 +60,26 @@
     <audio data-key="76" src="sounds/tink.wav"></audio>
 
     <script>
+        var clap = new Audio();
+        clap.src = 'sounds/clap.wav';
+        var hihat = new Audio();
+        hihat.src = 'sounds/hihat.wav';
+        var kick = new Audio();
+        kick.src = 'sounds/kick.wav';
+        var openhat = new Audio();
+        openhat.src = 'sounds/openhat.wav';
+        var boom = new Audio();
+        boom.src = 'sounds/boom.wav';
+        var ride = new Audio();
+        ride.src = 'sounds/ride.wav';
+        var snare = new Audio();
+        snare.src = 'sounds/snare.wav';
+        var tom = new Audio();
+        tom.src = 'sounds/tom.wav';
+        var tink = new Audio();
+        tink.src = 'sounds/tink.wav';
+
+
         function playSound(e) {
             const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
             const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
