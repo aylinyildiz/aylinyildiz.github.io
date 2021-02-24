@@ -5,6 +5,6 @@ A Pen created on CodePen.io. Original URL: [https://codepen.io/akshaycodes/pen/w
 
 
 *************************
-**Js30 Project: **
+**Js30 Project: ** :ghost:
 https://aylinyildiz.github.io/JavaScript30/drumKit/
 https://aylinyildiz.github.io/JavaScript30/oclock/
