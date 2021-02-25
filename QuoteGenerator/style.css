@@ -1,5 +1,6 @@
 html {
     opacity: 0.95;
+    filter: blue(2px);
 }
 
 body {
@@ -38,6 +39,15 @@ hr {
     background-color: black;
 }
 
+textarea {
+    width: 695px;
+    height: 100px;
+    font-family: 'Raleway', sans-serif;
+    background-color: black;
+    color: white;
+    border: black;
+}
+
 #author {
     float: right;
     margin-right: 30px;
@@ -71,4 +81,19 @@ a {
     color: white;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
+}
+
+#listen {
+    font-family: 'Raleway', sans-serif;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 2%;
+    margin-top: 5%;
+}
+
+#listen:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }

@@ -24,3 +24,8 @@ function tweetQuote() {
 
 btn.addEventListener("click", getQuote);
 twitterLink.addEventListener("click", tweetQuote);
+
+function textSpeak() {
+    var text = document.getElementById("quote").value;
+    responsiveVoice.speak(text);
+}
