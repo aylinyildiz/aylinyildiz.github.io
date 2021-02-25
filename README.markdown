@@ -8,3 +8,4 @@ A Pen created on CodePen.io. Original URL: [https://codepen.io/akshaycodes/pen/w
 ***Js30 Project*** 
 https://aylinyildiz.github.io/JavaScript30/drumKit/       
 https://aylinyildiz.github.io/JavaScript30/oclock/
+https://aylinyildiz.github.io/QuoteGenerator/
