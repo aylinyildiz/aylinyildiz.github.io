@@ -9,4 +9,4 @@ A Pen created on CodePen.io. Original URL: [https://codepen.io/akshaycodes/pen/w
 https://aylinyildiz.github.io/JavaScript30/drumKit/       
 https://aylinyildiz.github.io/JavaScript30/oclock/
 
-**Qoute Generator / ***kodluyoruz*** :** aylinyildiz.github.io/quote-generator/ 
+**Qoute Generator / ***kodluyoruz*** :** https://aylinyildiz.github.io/quote-generator/
