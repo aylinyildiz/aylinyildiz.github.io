@@ -46,6 +46,11 @@ body {
     transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 }
 
+.second-hand {
+    background-color: rgb(137, 58, 58);
+    height: 3px;
+}
+
 .box {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 35px;
